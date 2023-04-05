@@ -2,3 +2,50 @@
   margin: 0;
   padding: 0;
 }
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2379d9;
+}
+#logo:hover {
+  color: white;
+  cursor: pointer;
+  font-weight: "bold";
+}
+#logo {
+  margin-left: 80px;
+  color: #e5d3d3;
+  font-size: 24px;
+  font-weight: bold;
+}
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #2379d9;
+  margin-right: 50px;
+}
+
+.menu-item {
+  color: #e5d3d3;
+  padding: 18px;
+  font-size: 14px;
+}
+.menu-item:hover {
+  color: white;
+  cursor: pointer;
+  font-weight: "bold";
+}
+.login {
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 10px 20px;
+  width: 50px;
+  text-align: center;
+}
+.login:hover {
+  background-color: white;
+  color: #2379d9;
+}
