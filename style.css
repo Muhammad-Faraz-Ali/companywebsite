@@ -2,17 +2,17 @@
   margin: 0;
   padding: 0;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+}
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #2379d9;
-}
-#logo:hover {
-  color: white;
-  cursor: pointer;
-  font-weight: "bold";
+  border-bottom: 1px solid black;
+  min-height: 60px;
 }
 #logo {
   margin-left: 80px;
@@ -20,7 +20,13 @@
   font-size: 24px;
   font-weight: bold;
 }
-#menu {
+#logo:hover {
+  color: white;
+  cursor: pointer;
+  font-weight: "bold";
+}
+
+.menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -48,4 +54,65 @@
 .login:hover {
   background-color: white;
   color: #2379d9;
+  font-weight: bold;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2379d9;
+  /* padding: 100px; */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 100px;
+}
+
+#title h1 {
+  color: white;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#subtitle p {
+  color: white;
+  font-size: 18px;
+}
+.highlight {
+  color: blue;
+  font-size: 24px;
+}
+
+.signup {
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 10px 40px;
+  width: 70px;
+  text-align: center;
+}
+.signup:hover {
+  background-color: white;
+  color: #2379d9;
+  font-weight: bold;
+}
+.img-wrapper {
+  height: 300px;
+  width: 700px;
+  overflow: hidden;
+  background-color: pink;
+  margin-right: 100px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrapper img:hover {
+  transform: rotate(0deg) scale(1.2);
 }
